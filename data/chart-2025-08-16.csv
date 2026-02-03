@@ -1,0 +1,101 @@
+rank,title,artist,points,streaming,streaming_pct,airplay,airplay_pct,sales,sales_pct,prevRank,weeksOnChart,peak
+1,Golden,"Huntr/X, Ejae, Audrey Nuna, REI Ami, Kpop Demon Hunters",242,31500000,93,8400000,4,6500,3,2,7,1
+2,Ordinary,Alex Warren,242,21000000,59,73500000,38,8000,3,1,26,1
+3,The Subway,Chappell Roan,192,25200000,96,1000000,1,5500,3,0,1,3
+4,What I Want,Morgan Wallen feat. Tate McRae,168,19800000,81,23800000,18,2000,1,3,12,1
+5,Daisies,Justin Bieber,146,15800000,80,21600000,18,2000,2,4,4,2
+6,Love Me Not,Ravyn Lenae,143,12700000,61,44000000,39,800,1,6,19,6
+7,Just In Case,Morgan Wallen,142,15300000,73,29400000,26,1500,1,5,20,2
+8,Your Idol,"Saja Boys, Andrew Choi, neckwav, Danny Chung",142,19700000,98,200000,0,2000,1,9,7,8
+9,Lose Control,Teddy Swims,140,16000000,68,34100000,30,2000,1,7,103,1
+10,A Bar Song (Tipsy),Shaboozey,138,13800000,63,39500000,36,2000,1,8,69,1
+11,Die With A Smile,"Lady Gaga, Bruno Mars",133,11000000,54,47800000,45,1500,1,10,51,1
+12,I'm The Problem,Morgan Wallen,132,15900000,79,20800000,20,1500,1,11,27,2
+13,Luther,"Kendrick Lamar, SZA",127,10600000,54,45900000,45,600,0,12,37,1
+14,Soda Pop,"Saja Boys, Samuil Lee, Andrew Choi, Danny Chung",127,16900000,98,0,0,2500,2,16,6,14
+15,Manchild,Sabrina Carpenter,125,10600000,59,40100000,40,1000,1,13,9,1
+16,Good News,Shaboozey,124,8200000,40,58500000,59,2000,1,17,37,16
+17,Pink Pony Club,Chappell Roan,123,10700000,60,37000000,38,3000,3,14,60,4
+18,Beautiful Things,Benson Boone,122,12700000,66,31500000,32,1500,1,15,80,2
+19,How It's Done,"Huntr/X, Ejae, Audrey Nuna, REI Ami, Kpop Demon Hunters",120,16300000,98,0,0,2000,2,19,6,19
+20,Mutt,Leon Thomas,120,9000000,52,45700000,48,700,1,18,27,12
+21,I Had Some Help,Post Malone feat. Morgan Wallen,112,12300000,71,25000000,28,1500,1,20,65,1
+22,Birds Of A Feather,Billie Eilish,110,10000000,61,33800000,39,800,1,22,64,2
+23,I Got Better,Morgan Wallen,107,13200000,86,11300000,13,700,1,24,12,7
+24,Mystical Magical,Benson Boone,106,10800000,70,24200000,29,1500,1,25,15,17
+25,What It Sounds Like,"Ejae, REI Ami, Audrey Nuna, Huntr/X, Kpop Demon Hunters",100,13500000,98,0,0,2500,2,29,6,25
+26,Sorry I'm Here For Someone Else,Benson Boone,99,6000000,40,46900000,59,800,1,26,23,19
+27,Free,"Jinu, Ejae, Rumi, Andrew Choi, Kpop Demon Hunters",98,13600000,98,0,0,2000,2,28,6,27
+28,Undressed,sombr,96,8700000,61,29300000,38,700,1,30,18,25
+29,Takedown,"Audrey Nuna, REI Ami, Huntr/X, Ejae, Kpop Demon Hunters",96,13300000,98,0,0,1500,2,33,6,29
+30,Back To Friends,sombr,93,12300000,91,6100000,8,400,0,32,19,30
+31,All The Way,"BigXthaPlug, Bailey Zimmerman",91,12100000,86,9300000,13,1000,1,27,18,4
+32,Yukon,Justin Bieber,89,10400000,89,7100000,10,900,1,40,4,17
+33,Blue Stripes,Jessie Murph,87,8900000,70,20100000,29,1500,2,34,17,15
+34,It Depends,Chris Brown feat. Bryson Tiller,87,12200000,94,2400000,3,2000,2,43,2,34
+35,Burning Blue,Mariah The Scientist,86,8900000,65,23600000,34,700,1,41,14,25
+36,30 For 30,"SZA, Kendrick Lamar",85,4900000,39,41200000,60,200,0,36,33,10
+37,Backup Plan,"Bailey Zimmerman, Luke Combs",85,8000000,63,23900000,35,1500,2,35,14,34
+38,After All The Bars Are Closed,Thomas Rhett,83,6500000,52,31400000,47,600,1,42,15,38
+39,Miami,"Morgan Wallen, Lil Wayne, Rick Ross",79,10600000,97,1200000,2,700,1,21,5,21
+40,What Did I Miss?,Drake,79,7400000,68,20000000,32,300,0,31,5,2
+41,Worst Way,Riley Green,78,9400000,79,11900000,19,1000,1,44,30,20
+42,Nokia,Drake,77,7900000,73,16200000,26,700,1,37,25,2
+43,APT.,"ROSE, Bruno Mars",76,8200000,69,17600000,29,1500,2,45,42,3
+44,Happen To Me,Russell Dickerson,76,6600000,58,24700000,41,800,1,49,16,44
+45,Love Somebody,Morgan Wallen,75,8900000,77,13100000,22,900,1,46,42,1
+46,Folded,Kehlani,74,9500000,88,6600000,11,500,1,54,8,46
+47,Back In The Saddle,Luke Combs,67,7700000,79,10600000,20,1000,2,38,2,38
+48,Eternity,Alex Warren,62,8800000,98,100000,0,900,1,50,3,16
+49,Which One,Drake feat. Central Cee,62,7500000,90,3900000,8,1000,2,23,2,23
+50,20 Cigarettes,Morgan Wallen,60,8100000,99,100000,0,200,0,52,12,20
+51,Fix What You Didn't Break,Nate Smith,59,3100000,33,30700000,65,1000,2,65,19,51
+52,Better Me For You (Brown Eyes),Max McNown,59,7600000,87,2800000,6,4000,7,62,8,52
+53,6 Months Later,Megan Moroney,58,7600000,92,3400000,7,500,1,53,7,30
+54,Bottle Rockets,"Scotty McCreery, Hootie & The Blowfish",58,4900000,54,19800000,43,2000,3,63,7,54
+55,Napoleon,$uicideboy$,58,7700000,100,0,0,200,0,0,1,55
+56,Wildflower,Billie Eilish,57,6800000,78,9800000,22,200,0,55,60,17
+57,Outside,Cardi B,57,4400000,49,22800000,50,500,1,60,7,10
+58,Ring Ring Ring,"Tyler, The Creator",56,6700000,88,4300000,10,1000,2,47,3,44
+59,Shake It To The Max (Fly),"MOLLY, Silent Addy, Skillibeng, Shenseea",55,4600000,57,18200000,42,700,1,56,12,44
+60,I Ain't Comin' Back,"Morgan Wallen, Post Malone",54,7400000,90,3800000,9,600,1,57,16,8
+61,Amen,"Shaboozey, Jelly Roll",54,7800000,95,800000,2,1500,3,64,15,56
+62,Is It A Crime,"Mariah The Scientist, Kali Uchis",54,7000000,98,700000,2,300,0,0,1,62
+63,Jump,Blackpink,53,6700000,86,5100000,12,900,2,61,4,28
+64,House Again,Hudson Westbrook,53,6000000,76,10000000,24,300,1,68,16,64
+65,Just Keep Watching,Tate McRae,51,6700000,94,1600000,4,1000,2,58,10,33
+66,Takedown,Twice,51,7100000,99,0,0,600,1,67,5,66
+67,No Broke Boys,"Disco Lines, Tinashe",51,6500000,96,1000000,2,900,2,75,4,67
+68,Your Way's Better,Forrest Frank,50,6400000,84,4300000,11,2500,5,72,16,61
+69,Strategy,Twice,50,6900000,99,100000,0,200,0,74,3,69
+70,Crazy Train,Ozzy Osbourne,50,6700000,89,1600000,4,3500,7,39,3,39
+71,Sugar On My Tongue,"Tyler, The Creator",49,6700000,99,200000,0,200,0,51,3,41
+72,Party 4 U,Charli XCX,48,4800000,71,11000000,29,200,0,71,16,55
+73,Superman,Morgan Wallen,48,6900000,99,100000,0,300,1,69,13,8
+74,Bar None,Jordan Davis,46,3900000,55,16400000,44,500,1,80,5,74
+75,Twilight Zone,Ariana Grande,45,1900000,29,25600000,71,300,1,70,18,18
+76,Don't Mind If I Do,"Riley Green, Ella Langley",43,5200000,84,5300000,15,500,1,0,1,76
+77,TNN,"Forrest Frank, The Figs",43,4800000,82,0,0,8000,18,0,1,77
+78,Lemonade,"Forrest Frank, The Figs",43,4800000,82,0,0,8000,18,0,1,78
+79,Bloodline,"Alex Warren, Jelly Roll",43,6000000,98,100000,0,600,1,76,11,32
+80,Sparks,Coldplay,43,6100000,99,0,0,200,1,79,4,79
+81,Rather Lie,"Playboi Carti, The Weeknd",43,3000000,48,17600000,52,100,0,85,21,4
+82,Somewhere Over Laredo,Lainey Wilson,42,4200000,64,11400000,34,900,2,87,5,82
+83,Frecuencia,Los Dareyes De La Sierra,42,6900000,99,100000,0,100,0,83,3,83
+84,"Mama, I'm Coming Home",Ozzy Osbourne,42,5700000,87,1100000,3,4500,10,48,20,28
+85,Marlboro Rojo,Fuerza Regida,41,5900000,95,1600000,5,100,0,91,12,64
+86,Revolving Door,Tate McRae,41,3700000,61,12600000,38,200,0,92,17,22
+87,Nice To Meet You,Myles Smith,41,3100000,42,18600000,57,600,2,86,9,82
+88,EOO,Bad Bunny,41,4200000,70,9700000,30,100,0,88,29,24
+89,Hard Fought Hallelujah,Brandon Lake,40,4800000,80,5200000,16,1500,4,78,25,40
+90,So Far So Fake,Pierce The Veil,40,5300000,99,0,0,500,1,0,1,90
+91,Typa,Glorilla,39,3800000,56,13600000,44,200,0,93,8,42
+92,Went Legit,G Herbo,39,5500000,85,4500000,14,100,0,81,5,81
+93,Count Your Blessings,$uicideboy$,39,5200000,100,0,0,100,0,0,1,93
+94,Oh What A Wretched Man I Am!,$uicideboy$,39,5100000,100,0,0,0,0,0,1,94
+95,Whim Whamiee,"Pluto, YK NIECE",39,4400000,69,9400000,30,100,0,90,16,51
+96,12 To 12,sombr,37,5000000,100,0,0,200,0,0,1,96
+97,A Lot More Free,Max McNown,37,2900000,52,13200000,45,1000,3,0,1,97
+98,Tu Sancho,Fuerza Regida,37,5900000,100,0,0,100,0,100,8,65
+99,Somebody,Latto,36,4000000,67,9500000,33,100,0,0,1,99
+100,Park,Tyler Hubbard,36,500000,9,26100000,90,200,1,84,2,84

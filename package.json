@@ -1,0 +1,30 @@
+{
+  "name": "soundintel-bi-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "add-data": "tsx scripts/add-chart-data.ts",
+    "add-data:interactive": "tsx scripts/add-chart-data.ts interactive",
+    "smart-entry": "tsx scripts/smart-entry.ts",
+    "generate-template": "tsx scripts/smart-entry.ts generate",
+    "validate-csv": "tsx scripts/smart-entry.ts validate"
+  },
+  "dependencies": {
+    "@google/genai": "^1.39.0",
+    "@supabase/supabase-js": "^2.93.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "recharts": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "dotenv": "^17.2.3",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

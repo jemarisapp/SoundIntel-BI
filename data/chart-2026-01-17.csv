@@ -1,0 +1,101 @@
+rank,title,artist,points,streaming,streaming_pct,airplay,airplay_pct,sales,sales_pct,prevRank,weeksOnChart,peak
+1,The Fate Of Ophelia,Taylor Swift,266,18500000,67,62100000,29,11000,4,1,14,1
+2,Ordinary,Alex Warren,256,18100000,64,71800000,35,3500,1,3,47,1
+3,Golden,"Huntr/X, Ejae, Audrey Nuna, REI Ami, Kpop Demon Hunters",249,17900000,67,63100000,32,4000,2,2,29,1
+4,Man I Need,Olivia Dean,243,16900000,68,60400000,31,2500,1,4,20,4
+5,Choosin' Texas,Ella Langley,207,19000000,81,27100000,16,5000,2,5,12,5
+6,End Of Beginning,Djo,185,19200000,94,4400000,3,6500,3,16,23,6
+7,Folded,Kehlani,166,12000000,65,43500000,33,2000,1,6,30,6
+8,Back To Friends,sombr,159,10400000,61,48800000,38,1000,1,7,41,7
+9,Opalite,Taylor Swift,150,10900000,69,34900000,29,2000,1,8,14,2
+10,Mutt,Leon Thomas,136,5800000,44,60600000,56,400,0,9,48,6
+11,Daisies,Justin Bieber,130,7400000,56,44900000,43,600,0,10,25,2
+12,I Got Better,Morgan Wallen,121,10800000,78,20800000,21,600,1,11,30,7
+13,Where Is My Husband!,Raye,110,9100000,78,17600000,20,2000,2,13,15,13
+14,What You Saying,Lil Uzi Vert,109,11900000,99,900000,1,300,0,21,2,14
+15,So Easy (To Fall In Love),Olivia Dean,108,11000000,95,3800000,4,1000,1,14,15,14
+16,20 Cigarettes,Morgan Wallen,101,7800000,72,22100000,27,400,0,16,33,15
+17,FDO,Pooh Shiesty,95,11700000,99,800000,1,400,0,12,4,12
+18,It Depends,Chris Brown feat. Bryson Tiller,89,4400000,44,39900000,56,300,0,17,23,16
+19,What I Want,Morgan Wallen feat. Tate McRae,89,9700000,91,6100000,9,500,1,19,29,1
+20,Tit For Tat,Tate McRae,88,5900000,65,24400000,35,300,0,20,15,3
+21,Gabriela,KATSEYE,86,7100000,70,20500000,30,400,0,22,25,21
+22,Manchild,Sabrina Carpenter,83,7000000,77,15000000,22,600,1,18,27,1
+23,Love Me Not,Ravyn Lenae,81,7000000,78,14200000,22,400,0,24,36,5
+24,Don't Mind If I Do,"Riley Green, Ella Langley",81,5000000,59,25500000,39,900,1,23,23,23
+25,Wgft,Gunna feat. Burna Boy,80,5000000,58,26900000,42,200,0,25,22,25
+26,Purple Rain,Prince,80,8200000,95,2100000,3,2000,2,0,19,2
+27,Hell At Night,"BigXthaPlug, Ella Langley",79,8200000,94,3300000,5,400,1,28,22,27
+28,Better Me For You (Brown Eyes),Max McNown,79,5900000,67,20100000,32,800,1,32,30,28
+29,A Couple Minutes,Olivia Dean,77,8200000,99,0,0,600,1,36,11,29
+30,Internet Girl,Katseye,77,9300000,99,0,0,600,1,0,1,30
+31,Is It A Crime,"Mariah The Scientist, Kali Uchis",75,5000000,59,24200000,40,600,1,27,22,27
+32,Nice To Meet You,Myles Smith,75,2600000,30,37800000,63,400,1,26,30,26
+33,Happen To Me,Russell Dickerson,74,4400000,55,26000000,44,600,1,29,38,28
+34,Yukon,Justin Bieber,72,4200000,56,25000000,43,300,0,30,26,17
+35,6 Months Later,Megan Moroney,71,3900000,55,25300000,44,300,0,31,29,29
+36,The Fall,Cody Johnson,71,6000000,75,13800000,24,700,1,34,15,34
+37,4 Raws,EsDeeKid,71,7800000,100,0,0,100,0,38,4,37
+38,House Again,Hudson Westbrook,69,4700000,61,21200000,39,200,0,33,38,33
+39,Soda Pop,"Saja Boys, Samuil Lee, Andrew Choi, Danny Chung",65,7300000,98,300000,1,800,1,35,24,3
+40,I Thought I Saw Your Face Today,She & Him,64,7600000,100,0,0,100,0,43,5,40
+41,Amen,"Shaboozey, Jelly Roll",64,4200000,59,20500000,40,600,1,39,35,39
+42,12 To 12,sombr,63,6500000,93,3400000,7,400,1,44,21,41
+43,Days Like These,Luke Combs,60,4700000,70,13400000,28,1000,2,46,11,43
+44,Favorite Country Song,HARDY,60,1700000,33,31800000,66,500,1,42,11,42
+45,Last One To Know,Gavin Adcock,59,6800000,99,300000,1,400,1,47,21,45
+46,No Broke Boys,"Disco Lines, Tinashe",59,6100000,96,1700000,4,500,1,40,22,36
+47,I Ain't Comin' Back,"Morgan Wallen, Post Malone",59,4900000,74,12000000,25,200,0,60,30,8
+48,Travelin' Soldier,Cody Johnson & The Rockin' CJB,59,6400000,94,2200000,5,600,1,55,9,12
+49,Your Idol,"Saja Boys, Andrew Choi, neckwav, Danny Chung",58,6600000,99,300000,1,400,1,41,25,4
+50,How It's Done,"Huntr/X, Ejae, Audrey Nuna, REI Ami, Kpop Demon Hunters",58,6400000,97,900000,2,600,1,45,24,8
+51,How Far Does A Goodbye Go,Jason Aldean,56,2800000,45,24500000,54,600,1,49,13,49
+52,Die On This Hill,Sienna Spiro,56,6200000,99,0,0,500,1,69,3,52
+53,Tears,Sabrina Carpenter,56,4500000,75,10600000,24,600,1,37,19,3
+54,Chanel,Tyla,54,6100000,93,2700000,6,600,1,53,4,53
+55,Gone Gone Gone,"David Guetta, Teddy Swims, Tones And I",53,2700000,47,22300000,52,600,1,57,6,55
+56,Shot Callin,YoungBoy Never Broke Again,51,4800000,77,9500000,23,100,0,48,17,43
+57,Err Time,Cardi B,51,3200000,60,17700000,43,300,1,54,15,43
+58,Girl Get Up.,Doechii feat. SZA,51,5300000,97,800000,2,600,1,0,1,58
+59,Beautiful Things,Megan Maroney,51,5200000,89,4400000,11,300,1,64,6,59
+60,Elizabeth Taylor,Taylor Swift,50,5400000,100,0,0,200,0,59,14,3
+61,Take Me Thru Dere,"Metro Boomin, Quavo, Breskii, YK NIECE",50,2700000,47,20800000,52,100,0,51,15,51
+62,Camera,Ed Sheeran,49,1100000,29,27200000,70,400,1,58,17,58
+63,Stay Country Or Die Trying,Blake Shelton,48,300000,16,32000000,83,400,1,65,2,63
+64,When Did You Get Hot?,Sabrina Carpenter,48,4500000,84,5900000,15,200,0,66,17,17
+65,Dracula,Tame Impala,47,4100000,82,6700000,18,200,1,62,15,30
+66,Nice To Each Other,Olivia Dean,47,4800000,99,100000,0,300,1,74,11,66
+67,Cowgirl,Parmalee,46,200000,15,31100000,84,200,0,50,6,50
+68,Let Alone The One You Love,Olivia Dean,45,4700000,100,0,0,200,0,78,6,68
+69,Phantom,"EsDeeKid, Rico Ace",45,5200000,100,0,0,100,0,67,3,67
+70,Mr Recoup,21 Savage & Drake,44,4700000,93,2300000,7,100,0,61,4,61
+71,Eternity,Alex Warren,44,5200000,99,0,0,300,1,56,19,16
+72,Darlin',Chase Matthew,43,1700000,39,20700000,61,100,0,68,15,52
+73,Brunette,Tucker Wetmore,43,4300000,92,2500000,7,100,0,83,2,73
+74,Father Figure,Taylor Swift,42,4400000,99,200000,1,200,0,72,13,4
+75,Zoo,Shakira,42,5300000,97,0,0,1000,3,77,2,75
+76,Wi$h Li$t,Taylor Swift,41,4500000,99,100000,0,200,0,73,12,6
+77,Dopamina,"Peso Pluma, Tito Double P",41,4700000,100,0,0,100,0,52,2,52
+78,You Stole The Show,Sienna Spiro,41,4500000,100,0,0,200,0,0,1,78
+79,3am,"Loe Shimmy, Don Toliver",40,3900000,85,4800000,15,0,0,71,8,71
+80,Bloodline,"Alex Warren, Jelly Roll",40,3700000,77,7200000,22,400,1,81,15,32
+81,What An Awesome God,Phil Wickham,40,4000000,81,5400000,17,600,1,96,5,81
+82,Sugar On My Tongue,"Tyler, The Creator",39,4000000,97,9300000,0,200,0,70,25,41
+83,Who Knows,Daniel Caesar,39,4400000,99,300000,1,0,0,89,2,83
+84,Sienna,The Marias,38,4500000,100,0,0,0,0,87,15,74
+85,Dano,"Peso Pluma, Tito Double P",38,4300000,100,0,0,0,0,75,2,75
+86,Heart Of Stone,Jelly Roll,38,1900000,48,15800000,52,100,0,84,15,53
+87,Baby Steps,Olivia Dean,37,3900000,100,0,0,100,0,99,2,87
+88,Gnarly,KATSEYE,38,4600000,98,100000,0,700,2,82,13,82
+89,Boo,H3adband,37,4700000,99,100000,0,300,1,91,2,89
+90,The Life Of A Showgirl,Taylor Swift feat. Sabrina Carpenter,37,3900000,99,100000,0,300,1,85,11,8
+91,Fame Is A Gun,Addison Rae,36,4100000,100,0,0,100,0,0,4,73
+92,It Won't Be Long,George Birge,36,300000,19,23000000,80,300,1,80,2,80
+93,Ends Of The Earth,Ty Myers,36,2300000,59,11500000,40,200,1,95,3,93
+94,Amor,Emmanuell Cortes,35,3700000,81,5400000,19,100,0,90,4,90
+95,Don't Kill The Party,Ty Dolla $ign,35,3600000,99,100000,0,100,0,0,1,95
+96,I've Seen It,Olivia Dean,35,3600000,100,0,0,100,0,0,1,96
+97,Mrs. Trendsetter,Lil Baby,34,3800000,99,400000,1,100,0,0,1,97
+98,Safe,Cardi B feat. Kehlani,33,2100000,55,11700000,44,100,0,92,12,26
+99,Nobody's Girl,Tate McRae,32,3400000,100,0,0,100,0,97,5,29
+100,The Hardest Part,Olivia Dean,32,3300000,99,0,0,200,1,0,1,100

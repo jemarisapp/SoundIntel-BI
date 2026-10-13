@@ -360,8 +360,11 @@ const App: React.FC = () => {
           selectedSongId: selectedEntry?.songId ?? null,
         }),
       });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result?.error || 'Investigation failed.');
+      const result = await response.json().catch(() => null);
+      if (response.status === 404 && !result) {
+        throw new Error('The Investigator route is not running. Locally, start the app with npm run dev:full instead of npm run dev.');
+      }
+      if (!response.ok || !result) throw new Error(result?.error || 'Investigation failed.');
       const assistantMsg: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',

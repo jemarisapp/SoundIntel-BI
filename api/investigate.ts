@@ -136,7 +136,8 @@ Respond with JSON only, in this shape:
       body: JSON.stringify({
         model: MODEL,
         instructions: system,
-        input: question,
+        // JSON mode requires the word JSON in the input itself, not only in the instructions.
+        input: `${question}\n\nRespond in JSON.`,
         max_output_tokens: 900,
         text: { format: { type: 'json_object' } },
       }),

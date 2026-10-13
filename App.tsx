@@ -12,7 +12,7 @@ import {
   LineChart,
   Line
 } from 'recharts';
-import { useAvailableWeeks, useChartData } from './hooks/useChartData';
+import { useAvailableWeeks, useChartData, parseWeekString } from './hooks/useChartData';
 import {
   DashboardState,
   ChartEntry,
@@ -21,7 +21,6 @@ import {
   AssistantState,
   VisualComponent
 } from './types';
-import { GoogleGenAI, Type } from '@google/genai';
 
 // --- Global Constants (Dashboard Palette) ---
 const GREEN = '#10b981'; // Streaming
@@ -351,106 +350,18 @@ const App: React.FC = () => {
     setPanelView('expanded');
 
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
-      // Build full chart context with all songs
-      const allSongsContext = sortedByPoints.map(e => {
-        const s = songs.find(song => song.id === e.songId);
-        const strPct = e.streamingPct;
-        const airPct = e.airplayPct;
-        const salPct = e.salesPct;
-        const pctValues = [strPct, airPct, salPct].filter((v): v is number => v !== null && v !== undefined);
-        const hasAllPct = pctValues.length === 3;
-        const dominantMetric = hasAllPct
-          ? (strPct! >= airPct! && strPct! >= salPct! ? 'STREAMING' : airPct! >= salPct! ? 'AIRPLAY' : 'SALES')
-          : 'UNKNOWN';
-        return {
-          rank: e.rank,
-          title: s?.title || 'Unknown',
-          artist: s?.fullArtistName || 'Unknown',
-          points: e.points,
-          streaming: e.streamingVol,
-          streamingPct: strPct,
-          streamingRank: sortedByStreaming.findIndex(x => x.songId === e.songId) + 1,
-          airplay: e.airplayVol,
-          airplayPct: airPct,
-          airplayRank: sortedByAirplay.findIndex(x => x.songId === e.songId) + 1,
-          sales: e.salesVol,
-          salesPct: salPct,
-          salesRank: sortedBySales.findIndex(x => x.songId === e.songId) + 1,
-          prevRank: e.prevRank,
-          woc: e.woc,
-          peak: e.peak,
-          dominantMetric
-        };
+      // The AI call runs on the server (api/investigate.ts), so no API key ever reaches the browser.
+      const response = await fetch('/api/investigate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          question,
+          week: parseWeekString(state.selectedWeek),
+          selectedSongId: selectedEntry?.songId ?? null,
+        }),
       });
-
-      // Selected song details
-      const selectedSongData = allSongsContext.find(s => songs.find(song => song.id === selectedEntry?.songId)?.title === s.title);
-
-      const systemPrompt = `
-You are the Data Investigator for SoundIntel BI, a Hot 100 industry projections dashboard.
-You provide data-driven analysis using ONLY the actual data provided below. Never guess or make up numbers.
-
-=== QUERY DETECTION RULES ===
-1. If the user mentions a SPECIFIC SONG TITLE (like "Ordinary", "The Subway", etc.), find that song in the FULL CHART DATA below and analyze IT
-2. If the user uses vague terms like "it", "the song", "this track", use the SELECTED SONG context
-3. If the user asks for comparisons or rankings, use the FULL CHART DATA
-
-=== CURRENT CONTEXT ===
-Week: ${state.selectedWeek}
-Currently Selected Song: "${selectedSongData?.title || 'None'}" by ${selectedSongData?.artist || 'Unknown'}
-
-=== SELECTED SONG SUMMARY ===
-${selectedSongData ? `
-Rank: #${selectedSongData.rank} | Projected Chart Points: ${selectedSongData.points}
-Streaming: ${selectedSongData.streaming.toLocaleString()} (${formatPct(selectedSongData.streamingPct)}) - Rank #${selectedSongData.streamingRank}
-Airplay: ${selectedSongData.airplay.toLocaleString()} (${formatPct(selectedSongData.airplayPct)}) - Rank #${selectedSongData.airplayRank}
-Sales: ${selectedSongData.sales.toLocaleString()} (${formatPct(selectedSongData.salesPct)}) - Rank #${selectedSongData.salesRank}
-DOMINANT METRIC: ${selectedSongData.dominantMetric}
-Previous: ${selectedSongData.prevRank === 0 ? 'NEW' : '#' + selectedSongData.prevRank} | WoC: ${selectedSongData.woc} | Peak: #${selectedSongData.peak}
-` : 'No song selected'}
-
-=== FULL CHART DATA (All ${allSongsContext.length} Songs) ===
-${JSON.stringify(allSongsContext, null, 1)}
-
-=== ANALYSIS RULES ===
-1. ALWAYS use the actual data above - never invent numbers
-2. Dominant metric = HIGHEST percentage share (streaming/airplay/sales)
-3. "Streaming-driven" = streaming% > 60% | "Airplay-driven" = airplay% > 40% | "Balanced" = otherwise (only if all three percentages are provided)
-4. If any mix percentage is missing (null), explicitly note that mix percentages are not available and avoid mix-based labels
-5. When comparing songs, cite specific numbers
-6. Use terminology: delta, metric distribution, consumption profile, trajectory
-7. Peak refers to the highest rank the song has achieved on the chart historically
-8. WoC refers to the number of weeks the song has been on the chart
-9. +X/-X refers to the change in rank from the previous week
-
-=== RESPONSE FORMAT (JSON only) ===
-{
-  "text": "Based on final industry predictions for the week of ${state.selectedWeek}, your analysis citing actual numbers...",
-  "visual": {
-    "type": "bar-chart",
-    "title": "Chart Title",
-    "data": [
-      { "name": "Streaming", "value": <actual_number>, "color": "${GREEN}" },
-      { "name": "Airplay", "value": <actual_number>, "color": "${BLUE}" },
-      { "name": "Sales", "value": <actual_number>, "color": "${GOLD}" }
-    ]
-  },
-  "rationale": "The projection suggests ... (explain findings)..."
-}
-`;
-
-      const response = await ai.models.generateContent({
-        model: 'gemini-3-flash-preview',
-        contents: question,
-        config: {
-          systemInstruction: systemPrompt,
-          responseMimeType: "application/json"
-        }
-      });
-
-      const result = JSON.parse(response.text);
+      const result = await response.json();
+      if (!response.ok) throw new Error(result?.error || 'Investigation failed.');
       const assistantMsg: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
@@ -463,7 +374,8 @@ ${JSON.stringify(allSongsContext, null, 1)}
       setAssistant(prev => ({ ...prev, messages: [...prev.messages, assistantMsg], loading: false }));
     } catch (err) {
       console.error(err);
-      setAssistant(prev => ({ ...prev, loading: false, error: "Investigation failed. Ensure query relates to song/artist metrics." }));
+      const message = err instanceof Error && err.message ? err.message : 'Investigation failed. Ensure query relates to song/artist metrics.';
+      setAssistant(prev => ({ ...prev, loading: false, error: message }));
     }
   };
 

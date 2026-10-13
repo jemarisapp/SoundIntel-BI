@@ -195,7 +195,7 @@ export function useChartData(selectedWeek: string) {
 }
 
 // Helper: Parse "Week of August 16th, 2025" to "2025-08-16"
-function parseWeekString(week: string): string {
+export function parseWeekString(week: string): string {
     const match = week.match(/Week of (\w+) (\d+)(?:st|nd|rd|th)?(?:,?\s*(\d{4}))?/);
     if (!match) return new Date().toISOString().split('T')[0];
 

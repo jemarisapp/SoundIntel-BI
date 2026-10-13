@@ -11,10 +11,10 @@
     "add-data:interactive": "tsx scripts/add-chart-data.ts interactive",
     "smart-entry": "tsx scripts/smart-entry.ts",
     "generate-template": "tsx scripts/smart-entry.ts generate",
-    "validate-csv": "tsx scripts/smart-entry.ts validate"
+    "validate-csv": "tsx scripts/smart-entry.ts validate",
+    "dev:full": "vercel dev"
   },
   "dependencies": {
-    "@google/genai": "^1.39.0",
     "@supabase/supabase-js": "^2.93.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

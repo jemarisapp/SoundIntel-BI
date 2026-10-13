@@ -12,7 +12,8 @@ dotenv.config({ path: join(__dirname, '..', '.env.local') });
 
 const supabase = createClient(
     process.env.VITE_SUPABASE_URL!,
-    process.env.VITE_SUPABASE_ANON_KEY!
+    // Writes need the service role key, which stays on your machine (see .env.example)
+    process.env.SUPABASE_SERVICE_KEY || process.env.VITE_SUPABASE_ANON_KEY!
 );
 
 interface ExistingArtist {
